@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<component name="org.nuxeo.ecm.user.invite.core.service.contrib.mail.override">
+
+  <require>org.nuxeo.ecm.user.invite.core.service.contrib</require>
+
+  <extension target="org.nuxeo.ecm.user.invite.UserInvitationService" point="configuration">
+    <configuration merge="true">
+      <validationEmail>
+        <title>Hello ${userinfo.firstName} ${userinfo.lastName}! You are invited to access ${productName}</title>
+        <template>templates/EmailInviteDocTemplateOverride.ftl</template>
+      </validationEmail>
+      <!-- Uncomment to change 'revive' email
+      <reviveEmail>
+        <title>You are invited to access Nuxeo</title>
+        <template>templates/ReviveEmailInviteDocTemplateOverride.ftl</template>
+      </reviveEmail>
+       -->
+    </configuration>
+  </extension>
+
+</component>

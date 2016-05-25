@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.nuxeo.ecm.invite.override.mail;singleton:=tru
+ e
+Bundle-Name: Nuxeo User Invite Override Mail
+Bundle-Version: 1.0.0
+Bundle-ManifestVersion: 2
+Bundle-Vendor: Vincent Dutat
+Nuxeo-Component: OSGI-INF/user-invitation-mail-template-override-contr
+ ib.xml
+
