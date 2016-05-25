@@ -1,0 +1,1 @@
+# nuxeo-custom-user-invite-mail
